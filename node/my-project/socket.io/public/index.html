@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel=”shortcut icon” href="/favicon.ico" type=”image/x-icon”>
+<html>
+<head>
+    <title>Socket.io chat</title>
+    <script type="text/javascript" src = "./socket.io/socket.io.js"></script>
+ 
+    <script type="text/javascript" src="chat.js"></script>
+    <link rel="stylesheet" type="text/css" href="chat.css">
+</head>
+<body>
+<div id="chat">
+    <ul id="message">
+        <img src="/background-clip.jpg">
+        <form id="form">
+            <input type="text" id="input">
+            <button>Send</button>
+        </form>
+    </ul>
+</div>
+   <script type="text/javascript">
+        var socket = io();
+        // var oInput = document.querySelector('#input');
+        // var oForm = document.querySelector('#form');
+        // oForm.addEventListener('submit', function () {
+        //     socket.emit('chat message', oInput.value);
+        //         oInput.value = '';
+        //         return false;
+        // });
+
+
+    </script>
+</body>
+</html>
